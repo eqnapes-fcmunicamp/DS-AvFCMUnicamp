@@ -1,0 +1,130 @@
+/* Estilos dos componentes C1 a C27. Todo valor vem de tokens.css. */
+.fcm { font-family: var(--font-corpo); color: var(--texto); background: var(--papel); font-size: 10.5px; line-height: 1.4; padding: 16px; }
+.fcm *, .fcm *::before, .fcm *::after { box-sizing: border-box; }
+.fcm p, .fcm h1, .fcm h2, .fcm h3, .fcm ul { margin: 0; }
+.fcm .caps { text-transform: uppercase; letter-spacing: .1em; }
+.fcm .row { display: flex; align-items: center; gap: 10px; }
+.fcm .stack { display: flex; flex-direction: column; gap: 14px; }
+.fcm .tag { font-family: var(--font-corpo); font-size: 8.5px; color: var(--texto-3); }
+
+/* chips (C8) */
+.chip { display: inline-block; font-family: var(--font-titulo); font-weight: 700; font-size: 10.5px; line-height: 1.3; padding: 2px 8px; border-radius: var(--raio-chip); text-transform: uppercase; letter-spacing: .06em; white-space: nowrap; }
+.chip-verde { background: var(--verde-codigo); color: var(--texto); }
+.chip-disc { background: var(--chip-claro); color: var(--capa); }
+.chip-dominio { background: var(--capa); color: var(--sobre-escuro); }
+
+/* cabeçalho de página (C1) */
+.cab { background: var(--petroleo); color: var(--sobre-escuro); border-radius: var(--raio-cabecalho); padding: 10px 14px; }
+.cab .l1 { display: flex; align-items: center; gap: 10px; }
+.cab .filete { border: 0; border-top: 1px solid var(--sobre-escuro); opacity: .4; margin: 8px 0 6px; }
+.cab .l2 { display: flex; justify-content: space-between; font-size: 9.5px; }
+.cab-compacto { padding: 6px 12px; }
+.cab-compacto .titulo-pagina { font-size: 13px; }
+.cab-comparativo { padding: 6px 12px; }
+.cab-comparativo .titulo-pagina { font-size: 12px; }
+
+/* box (C3) */
+.box { background: var(--fundo-box); border: 1px solid var(--borda-box); border-radius: var(--raio-box); padding: 10px 12px; }
+.box .titulo-box { color: var(--petroleo); text-transform: uppercase; letter-spacing: .06em; }
+.box .sub { color: var(--texto-3); font-size: 9px; margin-top: 1px; }
+.box .corpo { margin-top: 8px; }
+
+/* barras (C4, C5, C6) */
+.bar { display: flex; height: 22px; border-radius: var(--raio-barra); overflow: hidden; }
+.bar .seg { display: flex; align-items: center; justify-content: center; font-family: var(--font-corpo); font-weight: 500; font-size: 9.5px; color: var(--texto); }
+.bar .seg.claro { color: var(--texto); } .bar .seg.escuro { color: var(--sobre-escuro); }
+.s-sim { background: var(--escala-sim); } .s-parcial { background: var(--escala-parcial); } .s-nao { background: var(--escala-nao); } .s-naosei { background: var(--escala-nao-sei); }
+.p-1 { background: var(--polo-1); } .p-2 { background: var(--polo-2); } .p-3 { background: var(--polo-3); } .p-4 { background: var(--polo-4); } .p-5 { background: var(--polo-5); }
+.bar.esmaecida { opacity: .4; }
+.leg { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 5px; font-family: var(--font-corpo); font-weight: 600; font-size: 9px; color: var(--rotulo-legenda); text-transform: uppercase; }
+.leg i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; }
+.polos { display: grid; grid-template-columns: 110px 1fr 110px; align-items: center; gap: 10px; }
+.polos .pl { font-size: 9.5px; color: var(--texto-2); } .polos .pl.dir { text-align: right; }
+.polos .bar { height: 26px; overflow: visible; border-radius: 0; gap: 2px; }
+.polos .bar .seg { border-radius: var(--raio-barra); }
+.polos .bar .seg.anel { outline: 2px solid var(--anel); outline-offset: 1px; }
+.simples { display: grid; grid-template-columns: var(--w, 150px) 1fr 36px; align-items: center; gap: 10px; margin: 5px 0; font-size: 9.5px; }
+.simples .trilho { height: 10px; background: var(--trilho-barra); border-radius: var(--raio-barra); }
+.simples .trilho b { display: block; height: 100%; background: var(--verde-barra); border-radius: var(--raio-barra); }
+.simples .v { font-family: var(--font-corpo); font-weight: 500; text-align: right; }
+.adesao b { background: var(--adesao) !important; }
+
+/* card de contagem (C7) */
+.card { border: 1px solid var(--borda-card); border-radius: var(--raio-card); padding: 8px 12px; min-width: 120px; background: var(--papel); }
+.card .rot { font-family: var(--font-corpo); font-weight: 600; font-size: 9px; color: var(--texto-3); text-transform: uppercase; letter-spacing: .06em; }
+.card .num { font-family: var(--font-titulo); font-weight: 700; font-size: 24px; line-height: 1.1; color: var(--petroleo); }
+.card.sensivel { border-color: var(--sensivel-cabecalho); }
+.card.sensivel .num { color: var(--sensivel-texto); }
+
+/* títulos, prosa, declaração, assinaturas */
+.centrado { text-align: center; }
+.centrado .filete { width: 56px; height: 0; border-top: 2px solid var(--capa); margin: 0 auto 8px; }
+.centrado .titulo-centrado { color: var(--capa); text-transform: uppercase; letter-spacing: .16em; }
+.centrado .sub { color: var(--texto-3); font-size: 10px; margin-top: 4px; }
+.prosa-bloco { text-align: justify; color: var(--texto); }
+.decl { background: var(--declaracao-fundo); color: var(--sobre-escuro); border-radius: var(--raio-box); padding: 10px 14px; }
+.decl .titulo-box { text-transform: uppercase; letter-spacing: .06em; color: var(--sobre-escuro); }
+.decl p { margin-top: 5px; font-size: 9.5px; line-height: 1.45; }
+.assin { border-top: 1px solid var(--filete-assinatura); padding-top: 8px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.assin .nome { font-family: var(--font-titulo); font-weight: 700; font-size: 10.5px; color: var(--texto); }
+.assin .funcao { font-size: 9px; color: var(--texto-3); }
+
+/* faixa de tema (C13), comentário (C14), sensíveis (C15) */
+.faixa { background: var(--faixa-tema); border-radius: var(--raio-barra); padding: 5px 10px; display: flex; justify-content: space-between; align-items: center; }
+.faixa .nome { font-family: var(--font-titulo); font-weight: 700; font-size: 10.5px; color: var(--texto); text-transform: uppercase; letter-spacing: .06em; }
+.faixa .cont { font-size: 9px; color: var(--texto-3); display: flex; gap: 12px; }
+.faixa .cont i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 4px; }
+.com { text-align: justify; margin-top: 6px; }
+.com.oport { border-left: 2px solid var(--oportunidade); padding: 1px 0 1px 8px; }
+.com.forte { background: var(--fundo-ponto-forte); border-left: 3px solid var(--ponto-forte); padding: 6px 10px; border-radius: 0 var(--raio-barra) var(--raio-barra) 0; }
+.sens { border-radius: var(--raio-box); overflow: hidden; border: 1px solid var(--sensivel-cabecalho); }
+.sens .cab-s { background: var(--sensivel-cabecalho); color: var(--sobre-escuro); padding: 5px 12px; display: flex; justify-content: space-between; font-family: var(--font-titulo); font-weight: 700; font-size: 10.5px; text-transform: uppercase; letter-spacing: .06em; }
+.sens .corpo-s { background: var(--sensivel-fundo); color: var(--sensivel-texto); padding: 8px 12px; }
+.sens .corpo-s strong { font-weight: 700; }
+
+/* íntegra (C16), contracapas (C17, C18), rodapé (C19), nota (C20), tabela (C21) */
+.integra-cab { background: var(--petroleo); color: var(--sobre-escuro); border-radius: var(--raio-cabecalho); padding: 8px 14px; }
+.integra-cab .comp { margin-top: 6px; display: flex; gap: 16px; font-size: 9.5px; }
+.contra { background: var(--petroleo); color: var(--sobre-escuro); position: relative; overflow: hidden; }
+.contra .bloco { position: absolute; }
+.contra .sobre { text-transform: uppercase; letter-spacing: .18em; opacity: .85; }
+.contra .titulo-contracapa { margin-top: 8px; line-height: 1.1; }
+.contra .codigo-contracapa { line-height: 1; }
+.rodape { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; padding: 6px 0; border-top: 1px solid var(--borda-box); }
+.rodape .ciclo { justify-self: start; background: var(--rodape-chip); color: var(--sobre-escuro); border-radius: var(--raio-chip); padding: 2px 8px; }
+.rodape .pag { font-family: var(--font-corpo); font-weight: 600; font-size: 9.33px; color: var(--numero-pagina); }
+.rodape .nivel { justify-self: end; color: var(--rodape-rotulo); text-transform: uppercase; letter-spacing: .08em; }
+.nota-l { color: var(--nota); margin-top: 6px; }
+.tab { width: 100%; border-collapse: collapse; font-size: 9.5px; }
+.tab th { background: var(--petroleo); color: var(--sobre-escuro); font-family: var(--font-titulo); font-weight: 700; text-transform: uppercase; letter-spacing: .06em; font-size: 9px; padding: 5px 8px; text-align: left; }
+.tab td { padding: 4px 8px; }
+.tab tr:nth-child(even) td { background: var(--fundo-box); }
+.tab .n { text-align: right; font-variant-numeric: tabular-nums; }
+.tab th.n { text-align: right; }
+/* programa (C2) */
+.prog { background: var(--mentoria-oliva); color: var(--sobre-escuro); border-radius: var(--raio-cabecalho); padding: 10px 14px; display: flex; align-items: center; justify-content: space-between; }
+.prog .chip { background: var(--mentoria-lima); color: var(--mentoria-preto); }
+.prog .simbolo { font-family: var(--font-titulo); font-weight: 700; font-size: 12.5px; color: var(--mentoria-lima); letter-spacing: .04em; }
+
+/* gráficos circulares, colunas, série e anel (C22 a C27) */
+.charts { display: flex; flex-wrap: wrap; gap: 24px 32px; align-items: flex-start; }
+.fig { margin: 0; }
+.fig svg, .stack svg { display: block; max-width: 100%; height: auto; }
+.fcm svg text { font-family: var(--font-corpo); }
+.f-sim { fill: var(--escala-sim); } .f-parcial { fill: var(--escala-parcial); } .f-nao { fill: var(--escala-nao); } .f-naosei { fill: var(--escala-nao-sei); }
+.f-p1 { fill: var(--polo-1); } .f-p2 { fill: var(--polo-2); } .f-p3 { fill: var(--polo-3); } .f-p4 { fill: var(--polo-4); } .f-p5 { fill: var(--polo-5); }
+.f-barra { fill: var(--verde-barra); } .f-adesao { fill: var(--adesao); }
+.sep { stroke: var(--papel); stroke-width: 1.5; }
+.lbl { font-weight: 500; font-size: 9.5px; text-anchor: middle; dominant-baseline: central; }
+.lbl.claro { fill: var(--texto); } .lbl.escuro { fill: var(--sobre-escuro); }
+.val { font-weight: 500; font-size: 9.5px; fill: var(--texto); }
+.cat { font-size: 9px; font-weight: 600; fill: var(--texto-2); text-transform: uppercase; letter-spacing: .06em; }
+.nota-n { font-size: 8.5px; fill: var(--texto-valor); }
+.eixo { font-size: 8.5px; fill: var(--texto-3); }
+.grade { stroke: var(--trilho-barra); stroke-width: 1; }
+.centro-num { font-family: var(--font-titulo) !important; font-weight: 700; fill: var(--petroleo); }
+.centro-rot { font-size: 8.5px; fill: var(--texto-3); }
+.linha { fill: none; stroke: var(--verde-barra); stroke-width: 2; stroke-linejoin: round; }
+.ponto { fill: var(--verde-barra); stroke: var(--papel); stroke-width: 1.5; }
+.a-trilho { fill: none; stroke: var(--trilho-barra); } .a-arco { fill: none; stroke: var(--adesao); stroke-linecap: butt; }
+.esm { opacity: .4; }

@@ -1,0 +1,52 @@
+<!-- @dsCard height=300 -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap">
+<style>
+  body { margin: 0; background: var(--papel); }
+  .cover { position: relative; width: 960px; height: 300px; background: var(--papel); overflow: hidden; }
+  .cover svg { position: absolute; inset: 0; }
+  .k-petroleo { fill: var(--petroleo); } .k-noturno { fill: var(--noturno); } .k-verde { fill: var(--verde-codigo); }
+  .k-claro { fill: var(--chip-claro); } .k-capa { fill: var(--capa); } .k-papel { fill: var(--papel); } .k-anel { fill: var(--anel); }
+  .k-p5 { fill: var(--polo-5); } .k-p4 { fill: var(--polo-4); } .k-p3 { fill: var(--polo-3); } .k-p2 { fill: var(--polo-2); }
+  .blk { rx: var(--raio-cabecalho); } .seg { rx: var(--raio-barra); }
+  .ring { fill: none; stroke: var(--anel); stroke-width: 3px; rx: var(--raio-barra); }
+  .nome { position: absolute; left: 48px; bottom: 60px; margin: 0; width: 420px; font-family: var(--font-titulo); font-weight: 700; font-size: 72px; line-height: .95; color: var(--texto); }
+  .tag { position: absolute; left: 48px; bottom: 28px; margin: 0; width: 420px; font-family: var(--font-corpo); font-size: 13px; line-height: 1.3; color: var(--texto-3); }
+</style>
+</head>
+<body>
+<div class="cover">
+<svg width="960" height="300" viewBox="0 0 960 300" aria-hidden="true">
+<!--
+blocos: petroleo 288x168 e noturno 192x168 sangrando no topo e à direita; verde-codigo 120x120, chip-claro 156x120, anel 60x60 e capa 108x120 sangrando na base; cantos raio-cabecalho
+arranjo: faixa superior de dois blocos largos sobre uma fileira de quatro blocos menores, em pilha escalonada à direita de x = 480
+padrão: barras empilhadas, a forma que o relatório usa para mostrar resposta; escolhido porque a escala Sim, Parcialmente, Não é a assinatura dos relatórios
+passos e raios: passo de 12px entre barras, altura 14px, raio-barra nos segmentos, raio-cabecalho nos blocos
+-->
+<rect class="blk k-petroleo" x="480" y="-6" width="288" height="174"/>
+<rect class="blk k-noturno" x="780" y="-6" width="192" height="174"/>
+<rect class="blk k-verde" x="480" y="180" width="120" height="126"/>
+<rect class="blk k-claro" x="612" y="180" width="156" height="126"/>
+<rect class="blk k-anel" x="780" y="180" width="60" height="60"/>
+<rect class="blk k-capa" x="852" y="180" width="120" height="126"/>
+<g>
+<rect class="seg k-papel" x="504" y="26" width="132" height="14"/><rect class="seg k-verde" x="640" y="26" width="64" height="14"/><rect class="seg k-claro" x="708" y="26" width="36" height="14"/>
+<rect class="seg k-papel" x="504" y="52" width="88" height="14"/><rect class="seg k-verde" x="596" y="52" width="104" height="14"/><rect class="seg k-claro" x="704" y="52" width="40" height="14"/>
+<rect class="seg k-papel" x="504" y="78" width="160" height="14"/><rect class="seg k-verde" x="668" y="78" width="40" height="14"/><rect class="seg k-claro" x="712" y="78" width="32" height="14"/>
+<rect class="seg k-papel" x="504" y="104" width="64" height="14"/><rect class="seg k-verde" x="572" y="104" width="120" height="14"/><rect class="seg k-claro" x="696" y="104" width="48" height="14"/>
+<rect class="seg k-papel" x="504" y="130" width="112" height="14"/><rect class="seg k-verde" x="620" y="130" width="84" height="14"/><rect class="seg k-claro" x="708" y="130" width="36" height="14"/>
+</g>
+<g>
+<rect class="seg k-claro" x="804" y="62" width="28" height="28"/><rect class="seg k-p5" x="834" y="62" width="28" height="28"/><rect class="seg k-p4" x="864" y="62" width="28" height="28"/><rect class="seg k-p3" x="894" y="62" width="28" height="28"/><rect class="seg k-p2" x="924" y="62" width="28" height="28"/>
+<rect class="ring" x="862" y="60" width="32" height="32"/>
+</g>
+</svg>
+<h1 class="nome">Relatórios FCM</h1>
+<p class="tag">Avaliação dos cursos da FCM-Unicamp, pelo Napes</p>
+</div>
+</body>
+</html>

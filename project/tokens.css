@@ -1,0 +1,115 @@
+/* Relatórios FCM — generated from tokens.json */
+:root, [data-theme="restrito"] {
+  --papel: #ffffff;
+  --sobre-escuro: #ffffff;
+  --petroleo: #005a5a;
+  --capa: #105b5c;
+  --noturno: #062d41;
+  --capa-fundo: #2f8f8f;
+  --verde-codigo: #00a078;
+  --verde-barra: #007864;
+  --adesao: #37a5a5;
+  --anel: #c98a00;
+  --chip-claro: #e3ede9;
+  --destaque-integra: #0d4f52;
+  --texto: #1a1a1a;
+  --texto-prosa: #2b2b29;
+  --texto-assinatura: #1f1f1d;
+  --texto-valor: #555555;
+  --texto-lista: #444444;
+  --texto-2: #3a3a38;
+  --texto-3: #6a6a66;
+  --nota: #8a8a86;
+  --numero-pagina: #9a9a94;
+  --rotulo-legenda: #888888;
+  --fundo-box: #f7f7f5;
+  --borda-box: #eaeae6;
+  --trilho-barra: #e6e6e2;
+  --faixa-tema: #edede9;
+  --borda-card: #e2e2de;
+  --filete-assinatura: #d8d8d2;
+  --fundo-ponto-forte: #f4f4f2;
+  --escala-sim: #00a078;
+  --escala-parcial: #ebbf7e;
+  --escala-nao: #d4564d;
+  --escala-nao-sei: #9a9993;
+  --polo-1: #005a5a;
+  --polo-2: #297474;
+  --polo-3: #ababa4;
+  --polo-4: #85b0b0;
+  --polo-5: #b2cece;
+  --oportunidade: #106a76;
+  --ponto-forte: #7fb800;
+  --ponto-forte-claro: #b4d278;
+  --ponto-forte-num: #5f8c00;
+  --sensivel-cabecalho: #c01410;
+  --sensivel-fundo: #fbeaea;
+  --sensivel-texto: #5a1f1a;
+  --met-expositivas: #005a5a;
+  --met-clinicas: #c98a00;
+  --met-interativas: #106a76;
+  --met-gravadas: #7fb800;
+  --met-simulacao: #9a6fb0;
+  --met-seminarios: #c0392b;
+  --mentoria-lima: #b9c932;
+  --mentoria-lima-escuro: #7e8c15;
+  --mentoria-oliva: #3e470c;
+  --mentoria-preto: #221f20;
+  --mentoria-cinza: #c2c2c2;
+  --mentoria-vermelho: #c9382f;
+  --mentoria-fundo: #f4f6e4;
+  --mentoria-escala-1: #7e8c15;
+  --mentoria-escala-2: #dde59c;
+  --mentoria-escala-3: #c9382f;
+  --mentoria-escala-4: #dad9d2;
+  --declaracao-fundo: var(--capa);
+  --rodape-chip: var(--noturno);
+  --rodape-rotulo: #9a3b38;
+}
+[data-theme="docente"] {
+  --rodape-chip: var(--capa);
+  --rodape-rotulo: var(--capa);
+}
+[data-theme="publico"] {
+  --rodape-chip: var(--capa);
+  --rodape-rotulo: var(--capa);
+}
+:root {
+  --margem-conteudo: 37.8px;
+  --margem-integra-topo: 43.47px;
+  --margem-resumo-v: 34.02px;
+  --margem-resumo-h: 41.57px;
+  --margem-sumario-v: 45.35px;
+  --margem-sumario-h: 52.91px;
+  --rodape-lateral: 37.8px;
+  --rodape-base: 11.34px;
+  --contracapa-x: 83.15px;
+  --contracapa-y: 445.98px;
+  --raio-chip: 4px;
+  --raio-cabecalho: 6px;
+  --raio-card: 6px;
+  --raio-barra: 4px;
+  --raio-box: 8px;
+  --font-titulo: "Google Sans", "Google Sans Flex", system-ui, sans-serif;
+  --font-corpo: "Spline Sans", system-ui, sans-serif;
+  --font-titulo-capa: "Google Sans Flex", "Google Sans", system-ui, sans-serif;
+}
+.capa-etiqueta { font-family: var(--font-titulo-capa); font-size: 24.1px; font-weight: 200; }
+.capa-titulo { font-family: var(--font-titulo-capa); font-size: 29.5px; font-weight: 700; }
+.capa-ciclo { font-family: var(--font-titulo-capa); font-size: 29.5px; font-weight: 200; }
+.titulo-contracapa { font-family: var(--font-titulo); font-size: 31px; font-weight: 700; }
+.sobretitulo-secao { font-family: var(--font-titulo); font-size: 14px; font-weight: 700; }
+.codigo-contracapa { font-family: var(--font-titulo); font-size: 34px; font-weight: 700; }
+.titulo-centrado { font-family: var(--font-titulo); font-size: 16.5px; font-weight: 700; }
+.titulo-pagina { font-family: var(--font-titulo); font-size: 15px; font-weight: 700; }
+.titulo-box { font-family: var(--font-titulo); font-size: 12.5px; font-weight: 700; }
+.titulo-item { font-family: var(--font-titulo); font-size: 10.5px; font-weight: 700; }
+.enunciado { font-family: var(--font-corpo); font-size: 10.5px; font-weight: 400; line-height: 1.4; }
+.prosa { font-family: var(--font-corpo); font-size: 10.6px; font-weight: 400; line-height: 1.52; }
+.comentario { font-family: var(--font-corpo); font-size: 8.3px; font-weight: 400; line-height: 1.52; }
+.legenda { font-family: var(--font-corpo); font-size: 9px; font-weight: 600; }
+.numero-barra { font-family: var(--font-corpo); font-size: 9.5px; font-weight: 500; }
+.nota-leitura { font-family: var(--font-corpo); font-size: 8.5px; font-weight: 400; }
+.rodape { font-family: var(--font-corpo); font-size: 8.67px; font-weight: 600; }
+@font-face { font-family: "Google Sans Flex"; src: url("fonts/GoogleSansFlex_72pt-ExtraLight.ttf") format("truetype"); font-weight: 200; font-style: normal; font-display: swap; }
+@font-face { font-family: "Google Sans Flex"; src: url("fonts/GoogleSansFlex_72pt-Bold.ttf") format("truetype"); font-weight: 700; font-style: normal; font-display: swap; }
